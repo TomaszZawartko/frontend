@@ -1,0 +1,37 @@
+[
+    {
+      "title": "12 Angry Men",
+      "country": "Poland",
+      "writer": "Reginald Rose",
+      "genre": "Crime",
+      "description": "A jury holdout attempts to prevent a miscarriage of justice by forcing his colleagues to reconsider the evidence."
+    },
+    {
+      "title":"The Dark Knight",
+      "country": "USA",
+      "writer": "Jonathan Nolan",
+      "genre": "Sci-Fi",
+      "description": "When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice."
+    },
+    {
+      "title": "Inception",
+      "country": "USA",
+      "writer":"Christopher Nolan",
+      "genre":"Sci-Fi",
+      "description": "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O."
+    },
+    {
+      "title": "Gladiator",
+      "country": "United Kingdom",
+      "writer": "David Franzoni",
+      "genre":"Drama",
+      "description": "A former Roman General sets out to exact vengeance against the corrupt emperor who murdered his family and sent him into slavery."
+    },
+    {
+      "title": "Scarface",
+      "country": "USA",
+      "writer":"Oliver Stone",
+      "genre":"Crime",
+      "description": "In 1980 Miami, a determined Cuban immigrant takes over a drug cartel and succumbs to greed."
+    }
+ ]

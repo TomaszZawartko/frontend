@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" >
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Film Table</title>
+    <link href="style.css" rel="stylesheet">
+  </head>
+
+<body>
+ 
+  <section class="container">
+ 
+    <h1>Movies</h2>
+ 
+    <table>
+        <thead>
+          <tr>
+            <th><input id="country" onkeyup="filterByInput(`country`, 1)" placeholder="Filter by country"></th>
+            <th><input id="writer" onkeyup="filterByInput(`writer`, 2)" placeholder="Filter by writer"></th>
+            <th><input id="genre" onkeyup="filterByInput(`genre`, 3)" placeholder="Filter by genre"></th>
+          </tr>
+        </thead>
+        <tbody id="movieTable">
+
+        </tbody>
+    </table>
+ 
+</section>
+ 
+    <script  src="filterFunction.js"></script>
+
+    <script>
+        fetch("data.json")
+        .then(response => response.json())
+        .then(data => {
+
+          const table = document.getElementById("movieTable");
+          let htmlContent = "";
+          
+          data.forEach(jsonElement => {
+            htmlContent +=
+            `<tr class="tableRow tooltip">
+              <td>${jsonElement.title}</td>
+              <td>${jsonElement.country}</td>
+              <td>${jsonElement.writer}</td>
+              <td>${jsonElement.genre}</td>
+              <td class="tooltiptext">${jsonElement.description}</td>
+            </tr>`;
+          });
+
+          table.innerHTML = 
+          `<tr>
+              <td>Title</td>
+              <td>Country</td>
+              <td>Writer</td>
+              <td>Genre</td>
+            </tr>` + htmlContent;
+        });
+    </script>
+ 
+</body>
+</html>
